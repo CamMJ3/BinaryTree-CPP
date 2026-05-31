@@ -1,0 +1,168 @@
+\doxysection{Nodo\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_nodo}{}\label{class_nodo}\index{Nodo$<$ T $>$@{Nodo$<$ T $>$}}
+
+
+{\ttfamily \+\#include $<$nodo.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_nodo_a846275fc0cd6c08007c9c3c7dd96da9f}{Nodo}} (T dato, \doxymbox{\hyperlink{class_nodo}{Nodo}}$<$ T $>$ \texorpdfstring{$\ast$}{*}nuevo\+\_\+izq, \doxymbox{\hyperlink{class_nodo}{Nodo}}$<$ T $>$ \texorpdfstring{$\ast$}{*}nuevo\+\_\+der)
+\begin{DoxyCompactList}\small\item\em Inicializa el \doxylink{class_nodo}{Nodo} con un valor, estableciendo sus punteros a los nodos "{}izquierdo"{} y "{}derecho"{}. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_nodo_a8e2be6501fd2922a7b6ac6d54ac508b7}{Nodo}} (T dato)
+\begin{DoxyCompactList}\small\item\em Inicializa el \doxylink{class_nodo}{Nodo} con un valor, estableciendo sus punteros a nullptr. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_nodo_aeefb2e4bd278e870e791d40c98bedd4c}{Nodo}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa el \doxylink{class_nodo}{Nodo} vacío (sin valor ni referencias); Es el constructor predeterminado del \doxylink{class_nodo}{Nodo}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T \doxymbox{\hyperlink{class_nodo_a613ab6486fc4e6af9aff4509412944b4}{valor}}
+\item 
+\doxymbox{\hyperlink{class_nodo}{Nodo}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_nodo_a9907dffc54a864d04e07fc826bf82759}{nodo\+\_\+izq}}
+\item 
+\doxymbox{\hyperlink{class_nodo}{Nodo}}$<$ T $>$ \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_nodo_abd01d6cbc8d4cb90ffd7dc64d60647b6}{nodo\+\_\+der}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Nodo$<$ T $>$}
+
+
+Definition at line \doxymbox{\hyperlink{nodo_8h_source_l00014}{14}} of file \doxymbox{\hyperlink{nodo_8h_source}{nodo.\+h}}.
+
+
+
+\label{doc-constructors}
+\Hypertarget{class_nodo_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_nodo_a846275fc0cd6c08007c9c3c7dd96da9f}\index{Nodo$<$ T $>$@{Nodo$<$ T $>$}!Nodo@{Nodo}}
+\index{Nodo@{Nodo}!Nodo$<$ T $>$@{Nodo$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Nodo()}{Nodo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_nodo_a846275fc0cd6c08007c9c3c7dd96da9f} 
+template$<$typename T$>$ \\
+\doxymbox{\hyperlink{class_nodo}{Nodo}}$<$ T $>$::\+\+Nodo (\begin{DoxyParamCaption}\item[{T}]{dato}{, }\item[{\doxymbox{\hyperlink{class_nodo}{Nodo}}$<$ T $>$ \texorpdfstring{$\ast$}{*}}]{nuevo\+\_\+izq}{, }\item[{\doxymbox{\hyperlink{class_nodo}{Nodo}}$<$ T $>$ \texorpdfstring{$\ast$}{*}}]{nuevo\+\_\+der}{}\end{DoxyParamCaption})}
+
+
+
+Inicializa el \doxylink{class_nodo}{Nodo} con un valor, estableciendo sus punteros a los nodos "{}izquierdo"{} y "{}derecho"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dato} & El valor que se almacenará en el \doxylink{class_nodo}{Nodo}. \\
+\hline
+{\em nuevo\+\_\+izq} & La dirección de memoria del nodo conectado a este por el lado izquierdo. \\
+\hline
+{\em nuevo\+\_\+der} & La dirección de memoria del nodo conectado a este por el lado derecho. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \doxymbox{\hyperlink{nodo_8cpp_source_l00019}{19}} of file \doxymbox{\hyperlink{nodo_8cpp_source}{nodo.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00020\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \doxymbox{\hyperlink{class_nodo_a613ab6486fc4e6af9aff4509412944b4}{valor}}\ =\ \doxymbox{\hyperlink{class_nodo}{dato}};}
+\DoxyCodeLine{00022\ \ \ \ \ \doxymbox{\hyperlink{class_nodo_a9907dffc54a864d04e07fc826bf82759}{nodo\_izq}}\ =\ \doxymbox{\hyperlink{class_nodo}{nuevo\_izq}};}
+\DoxyCodeLine{00023\ \ \ \ \ \doxymbox{\hyperlink{class_nodo_abd01d6cbc8d4cb90ffd7dc64d60647b6}{nodo\_der}}\ =\ \doxymbox{\hyperlink{class_nodo}{nuevo\_der}};}
+\DoxyCodeLine{00024\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_nodo_a8e2be6501fd2922a7b6ac6d54ac508b7}\index{Nodo$<$ T $>$@{Nodo$<$ T $>$}!Nodo@{Nodo}}
+\index{Nodo@{Nodo}!Nodo$<$ T $>$@{Nodo$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Nodo()}{Nodo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_nodo_a8e2be6501fd2922a7b6ac6d54ac508b7} 
+template$<$typename T$>$ \\
+\doxymbox{\hyperlink{class_nodo}{Nodo}}$<$ T $>$::\+\+Nodo (\begin{DoxyParamCaption}\item[{T}]{dato}{}\end{DoxyParamCaption})}
+
+
+
+Inicializa el \doxylink{class_nodo}{Nodo} con un valor, estableciendo sus punteros a nullptr. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dato} & El valor que se almacenará en el \doxylink{class_nodo}{Nodo}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \doxymbox{\hyperlink{nodo_8cpp_source_l00035}{35}} of file \doxymbox{\hyperlink{nodo_8cpp_source}{nodo.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00036\ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \doxymbox{\hyperlink{class_nodo_a613ab6486fc4e6af9aff4509412944b4}{valor}}\ =\ \doxymbox{\hyperlink{class_nodo}{dato}};}
+\DoxyCodeLine{00038\ \ \ \ \ \doxymbox{\hyperlink{class_nodo_a9907dffc54a864d04e07fc826bf82759}{nodo\_izq}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00039\ \ \ \ \ \doxymbox{\hyperlink{class_nodo_abd01d6cbc8d4cb90ffd7dc64d60647b6}{nodo\_der}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00040\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_nodo_aeefb2e4bd278e870e791d40c98bedd4c}\index{Nodo$<$ T $>$@{Nodo$<$ T $>$}!Nodo@{Nodo}}
+\index{Nodo@{Nodo}!Nodo$<$ T $>$@{Nodo$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Nodo()}{Nodo()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_nodo_aeefb2e4bd278e870e791d40c98bedd4c} 
+template$<$typename T$>$ \\
+\doxymbox{\hyperlink{class_nodo}{Nodo}}$<$ T $>$::\+\+Nodo (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Inicializa el \doxylink{class_nodo}{Nodo} vacío (sin valor ni referencias); Es el constructor predeterminado del \doxylink{class_nodo}{Nodo}. 
+
+Inicializa el \doxylink{class_nodo}{Nodo} vacío (sin valor ni referencias). Es el constructor predeterminado del \doxylink{class_nodo}{Nodo}. 
+
+Definition at line \doxymbox{\hyperlink{nodo_8cpp_source_l00050}{50}} of file \doxymbox{\hyperlink{nodo_8cpp_source}{nodo.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00051\ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \doxymbox{\hyperlink{class_nodo_a613ab6486fc4e6af9aff4509412944b4}{valor}}\ =\ \doxymbox{\hyperlink{class_nodo}{T}}();}
+\DoxyCodeLine{00053\ \ \ \ \ \doxymbox{\hyperlink{class_nodo_a9907dffc54a864d04e07fc826bf82759}{nodo\_izq}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00054\ \ \ \ \ \doxymbox{\hyperlink{class_nodo_abd01d6cbc8d4cb90ffd7dc64d60647b6}{nodo\_der}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00055\ \}}
+
+\end{DoxyCode}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_nodo_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_nodo_abd01d6cbc8d4cb90ffd7dc64d60647b6}\index{Nodo$<$ T $>$@{Nodo$<$ T $>$}!nodo\_der@{nodo\_der}}
+\index{nodo\_der@{nodo\_der}!Nodo$<$ T $>$@{Nodo$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{nodo\_der}{nodo\_der}}
+{\footnotesize\ttfamily \label{class_nodo_abd01d6cbc8d4cb90ffd7dc64d60647b6} 
+template$<$typename T$>$ \\
+\doxymbox{\hyperlink{class_nodo}{Nodo}}$<$T$>$\texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_nodo}{Nodo}}$<$ T $>$::\+nodo\+\_\+der}
+
+
+
+Definition at line \doxymbox{\hyperlink{nodo_8h_source_l00019}{19}} of file \doxymbox{\hyperlink{nodo_8h_source}{nodo.\+h}}.
+
+\Hypertarget{class_nodo_a9907dffc54a864d04e07fc826bf82759}\index{Nodo$<$ T $>$@{Nodo$<$ T $>$}!nodo\_izq@{nodo\_izq}}
+\index{nodo\_izq@{nodo\_izq}!Nodo$<$ T $>$@{Nodo$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{nodo\_izq}{nodo\_izq}}
+{\footnotesize\ttfamily \label{class_nodo_a9907dffc54a864d04e07fc826bf82759} 
+template$<$typename T$>$ \\
+\doxymbox{\hyperlink{class_nodo}{Nodo}}$<$T$>$\texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_nodo}{Nodo}}$<$ T $>$::\+nodo\+\_\+izq}
+
+
+
+Definition at line \doxymbox{\hyperlink{nodo_8h_source_l00018}{18}} of file \doxymbox{\hyperlink{nodo_8h_source}{nodo.\+h}}.
+
+\Hypertarget{class_nodo_a613ab6486fc4e6af9aff4509412944b4}\index{Nodo$<$ T $>$@{Nodo$<$ T $>$}!valor@{valor}}
+\index{valor@{valor}!Nodo$<$ T $>$@{Nodo$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{valor}{valor}}
+{\footnotesize\ttfamily \label{class_nodo_a613ab6486fc4e6af9aff4509412944b4} 
+template$<$typename T$>$ \\
+T \doxymbox{\hyperlink{class_nodo}{Nodo}}$<$ T $>$::\+valor}
+
+
+
+Definition at line \doxymbox{\hyperlink{nodo_8h_source_l00017}{17}} of file \doxymbox{\hyperlink{nodo_8h_source}{nodo.\+h}}.
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+headers/\+\doxymbox{\hyperlink{nodo_8h}{nodo.\+h}}\item 
+src/\+\doxymbox{\hyperlink{nodo_8cpp}{nodo.\+cpp}}\end{DoxyCompactItemize}

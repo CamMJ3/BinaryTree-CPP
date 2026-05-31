@@ -1,0 +1,44 @@
+\doxysection{arbol.\+h}
+\hypertarget{arbol_8h_source}{}\label{arbol_8h_source}\index{headers/arbol.h@{headers/arbol.h}}
+\doxymbox{\hyperlink{arbol_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00001}00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00002}00002\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{nodo_8h}{nodo.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00014}00014\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00015}\doxymbox{\hyperlink{class_arbol}{00015}}\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_arbol_a5612a2aa65ab954ec9ae442fdadef9de}{Arbol}}}
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00016}00016\ \{}
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00017}00017\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00018}00018\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_nodo}{Nodo<T>}}*\ raiz;}
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00019}00019\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ eliminarArbol(\doxymbox{\hyperlink{class_nodo}{Nodo<T>}}*\ inicio);\ }
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00021}00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_arbol_a6b389a2d91cf8ae94cc100522b6b786d}{contarNodos}}(\doxymbox{\hyperlink{class_nodo}{Nodo<T>}}*\ inicio);\ }
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00022}00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_arbol_a1e0a2db57aa25a2eaddd10afb7c286cf}{contarHojas}}(\doxymbox{\hyperlink{class_nodo}{Nodo<T>}}*\ inicio);\ }
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00023}00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_arbol_a8023b93c1ad7642d324963dd553449ff}{contarInternos}}(\doxymbox{\hyperlink{class_nodo}{Nodo<T>}}*\ inicio,\ \doxymbox{\hyperlink{class_nodo}{Nodo<T>}}*\ arbol\_raiz);\ }
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00024}00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ sumaNodos(\doxymbox{\hyperlink{class_nodo}{Nodo<T>}}*\ inicio);\ }
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00025}00025\ \ \ \ \ \ \ \ \ T\ \doxymbox{\hyperlink{class_arbol_abc62efcfc6bb5d954fa84942ebdafb8b}{buscarMax}}(\doxymbox{\hyperlink{class_nodo}{Nodo<T>}}*\ inicio);\ }
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00027}00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ ordenPre(\doxymbox{\hyperlink{class_nodo}{Nodo<T>}}*\ inicio);\ }
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00028}00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ ordenIn(\doxymbox{\hyperlink{class_nodo}{Nodo<T>}}*\ inicio);\ }
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00029}00029\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ ordenPost(\doxymbox{\hyperlink{class_nodo}{Nodo<T>}}*\ inicio);\ }
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00031}00031\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00032}00032\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_arbol_a5612a2aa65ab954ec9ae442fdadef9de}{Arbol}}();\ }
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00033}00033\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_arbol_a8110e3f6fcd750c5755f8127604b6b7b}{\string~Arbol}}();\ }
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00035}00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_arbol_a027ae9589732b5c606359824677fa818}{insertarDato}}(T\ dato);\ }
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00037}00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_arbol_a6b389a2d91cf8ae94cc100522b6b786d}{contarNodos}}();\ }
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00038}00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_arbol_a1e0a2db57aa25a2eaddd10afb7c286cf}{contarHojas}}();\ }
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00039}00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_arbol_a8023b93c1ad7642d324963dd553449ff}{contarInternos}}();\ }
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00040}00040\ \ \ \ \ \ \ \ \ T\ \doxymbox{\hyperlink{class_arbol_abc62efcfc6bb5d954fa84942ebdafb8b}{buscarMax}}();\ }
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00041}00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{class_arbol_abd0776d1af9723024018051dbadbb172}{promedio}}();\ \textcolor{comment}{//<\ Calcula\ el\ promedio\ de\ los\ valores\ almancenados\ en\ los\ nodos\ del\ árbol.}}
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00042}00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_arbol_a306728b842f03eb6785be16db021537f}{visualizacion}}();\ }
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00043}00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_arbol_af3027c56d2a4c697865fbfbc50f50dfe}{orden}}();\ }
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00044}00044\ \};}
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{arbol_8h_source_l00046}00046\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{arbol_8cpp}{../src/arbol.cpp}}"{}}\ }
+
+\end{DoxyCode}

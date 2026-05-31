@@ -1,0 +1,384 @@
+\doxysection{Arbol\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_arbol}{}\label{class_arbol}\index{Arbol$<$ T $>$@{Arbol$<$ T $>$}}
+
+
+{\ttfamily \+\#include $<$arbol.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_arbol_a5612a2aa65ab954ec9ae442fdadef9de}{Arbol}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa el árbol vacío. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_arbol_a8110e3f6fcd750c5755f8127604b6b7b}{\texorpdfstring{$\sim$}{\string~}\+Arbol}} ()
+\begin{DoxyCompactList}\small\item\em Destruye el árbol, liberando la memoria asignada a este. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_arbol_a027ae9589732b5c606359824677fa818}{insertar\+Dato}} (T dato)
+\begin{DoxyCompactList}\small\item\em Inserta un nuevo nodo con el valor de "{}dato"{} en el árbol. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_arbol_a6b389a2d91cf8ae94cc100522b6b786d}{contar\+Nodos}} ()
+\begin{DoxyCompactList}\small\item\em Función pública que llama a contar\+Nodos(\+Nodo$<$\+T$>$\texorpdfstring{$\ast$}{*} inicio). \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_arbol_a1e0a2db57aa25a2eaddd10afb7c286cf}{contar\+Hojas}} ()
+\begin{DoxyCompactList}\small\item\em Función pública que llama a contar\+Hojas(\+Nodo$<$\+T$>$\texorpdfstring{$\ast$}{*} inicio). \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_arbol_a8023b93c1ad7642d324963dd553449ff}{contar\+Internos}} ()
+\begin{DoxyCompactList}\small\item\em Función pública que llama a contar\+Internos(\+Nodo$<$\+T$>$\texorpdfstring{$\ast$}{*} inicio). \end{DoxyCompactList}\item 
+T \doxymbox{\hyperlink{class_arbol_abc62efcfc6bb5d954fa84942ebdafb8b}{buscar\+Max}} ()
+\begin{DoxyCompactList}\small\item\em Función pública que llama a buscar\+Max(\+Nodo$<$\+T$>$\texorpdfstring{$\ast$}{*} inicio). \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{class_arbol_abd0776d1af9723024018051dbadbb172}{promedio}} ()
+\begin{DoxyCompactList}\small\item\em Calcula el promedio de los valores almancenados en los nodos del árbol. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_arbol_a306728b842f03eb6785be16db021537f}{visualizacion}} ()
+\begin{DoxyCompactList}\small\item\em Imprime el contenido de los nodos por nivel. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_arbol_af3027c56d2a4c697865fbfbc50f50dfe}{orden}} ()
+\begin{DoxyCompactList}\small\item\em Imprime el contenido de los nodos en pre-\/orden, in-\/orden y post-\/orden. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Arbol$<$ T $>$}
+
+
+Definition at line \doxymbox{\hyperlink{arbol_8h_source_l00015}{15}} of file \doxymbox{\hyperlink{arbol_8h_source}{arbol.\+h}}.
+
+
+
+\label{doc-constructors}
+\Hypertarget{class_arbol_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_arbol_a5612a2aa65ab954ec9ae442fdadef9de}\index{Arbol$<$ T $>$@{Arbol$<$ T $>$}!Arbol@{Arbol}}
+\index{Arbol@{Arbol}!Arbol$<$ T $>$@{Arbol$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Arbol()}{Arbol()}}
+{\footnotesize\ttfamily \label{class_arbol_a5612a2aa65ab954ec9ae442fdadef9de} 
+template$<$typename T$>$ \\
+\doxymbox{\hyperlink{class_arbol}{Arbol}}$<$ T $>$::\+\+Arbol (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Inicializa el árbol vacío. 
+
+La referencia a la raíz del árbol se establece a nullptr. 
+
+Definition at line \doxymbox{\hyperlink{arbol_8cpp_source_l00022}{22}} of file \doxymbox{\hyperlink{arbol_8cpp_source}{arbol.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00023\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ raiz\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00025\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_arbol_a8110e3f6fcd750c5755f8127604b6b7b}\index{Arbol$<$ T $>$@{Arbol$<$ T $>$}!````~Arbol@{\texorpdfstring{$\sim$}{\string~}Arbol}}
+\index{````~Arbol@{\texorpdfstring{$\sim$}{\string~}Arbol}!Arbol$<$ T $>$@{Arbol$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Arbol()}{\string~Arbol()}}
+{\footnotesize\ttfamily \label{class_arbol_a8110e3f6fcd750c5755f8127604b6b7b} 
+template$<$typename T$>$ \\
+\doxymbox{\hyperlink{class_arbol}{Arbol}}$<$ T $>$::\+\texorpdfstring{$\sim$}{\string~}\doxymbox{\hyperlink{class_arbol}{Arbol}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destruye el árbol, liberando la memoria asignada a este. 
+
+Destructor del árbol que llama a la función eliminar\+Arbol(\+Nodo$<$\+T$>$\texorpdfstring{$\ast$}{*} inicio) para liberar la memoria asignada al árbol binario. 
+
+Definition at line \doxymbox{\hyperlink{arbol_8cpp_source_l00053}{53}} of file \doxymbox{\hyperlink{arbol_8cpp_source}{arbol.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00054\ \{}
+\DoxyCodeLine{00055\ \ \ \ \ eliminarArbol(raiz);}
+\DoxyCodeLine{00056\ \}}
+
+\end{DoxyCode}
+
+
+\label{doc-func-members}
+\Hypertarget{class_arbol_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_arbol_abc62efcfc6bb5d954fa84942ebdafb8b}\index{Arbol$<$ T $>$@{Arbol$<$ T $>$}!buscarMax@{buscarMax}}
+\index{buscarMax@{buscarMax}!Arbol$<$ T $>$@{Arbol$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{buscarMax()}{buscarMax()}}
+{\footnotesize\ttfamily \label{class_arbol_abc62efcfc6bb5d954fa84942ebdafb8b} 
+template$<$typename T$>$ \\
+T \doxymbox{\hyperlink{class_arbol}{Arbol}}$<$ T $>$::\+buscar\+Max (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Función pública que llama a buscar\+Max(\+Nodo$<$\+T$>$\texorpdfstring{$\ast$}{*} inicio). 
+
+
+
+Definition at line \doxymbox{\hyperlink{arbol_8cpp_source_l00246}{246}} of file \doxymbox{\hyperlink{arbol_8cpp_source}{arbol.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00247\ \{}
+\DoxyCodeLine{00248\ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{class_arbol_abc62efcfc6bb5d954fa84942ebdafb8b}{buscarMax}}(raiz);}
+\DoxyCodeLine{00249\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_arbol_a1e0a2db57aa25a2eaddd10afb7c286cf}\index{Arbol$<$ T $>$@{Arbol$<$ T $>$}!contarHojas@{contarHojas}}
+\index{contarHojas@{contarHojas}!Arbol$<$ T $>$@{Arbol$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{contarHojas()}{contarHojas()}}
+{\footnotesize\ttfamily \label{class_arbol_a1e0a2db57aa25a2eaddd10afb7c286cf} 
+template$<$typename T$>$ \\
+int \doxymbox{\hyperlink{class_arbol}{Arbol}}$<$ T $>$::\+contar\+Hojas (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Función pública que llama a contar\+Hojas(\+Nodo$<$\+T$>$\texorpdfstring{$\ast$}{*} inicio). 
+
+
+
+Definition at line \doxymbox{\hyperlink{arbol_8cpp_source_l00163}{163}} of file \doxymbox{\hyperlink{arbol_8cpp_source}{arbol.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00164\ \{}
+\DoxyCodeLine{00165\ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{class_arbol_a1e0a2db57aa25a2eaddd10afb7c286cf}{contarHojas}}(raiz);}
+\DoxyCodeLine{00166\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_arbol_a8023b93c1ad7642d324963dd553449ff}\index{Arbol$<$ T $>$@{Arbol$<$ T $>$}!contarInternos@{contarInternos}}
+\index{contarInternos@{contarInternos}!Arbol$<$ T $>$@{Arbol$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{contarInternos()}{contarInternos()}}
+{\footnotesize\ttfamily \label{class_arbol_a8023b93c1ad7642d324963dd553449ff} 
+template$<$typename T$>$ \\
+int \doxymbox{\hyperlink{class_arbol}{Arbol}}$<$ T $>$::\+contar\+Internos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Función pública que llama a contar\+Internos(\+Nodo$<$\+T$>$\texorpdfstring{$\ast$}{*} inicio). 
+
+
+
+Definition at line \doxymbox{\hyperlink{arbol_8cpp_source_l00205}{205}} of file \doxymbox{\hyperlink{arbol_8cpp_source}{arbol.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00206\ \{}
+\DoxyCodeLine{00207\ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{class_arbol_a8023b93c1ad7642d324963dd553449ff}{contarInternos}}(raiz,\ raiz);}
+\DoxyCodeLine{00208\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_arbol_a6b389a2d91cf8ae94cc100522b6b786d}\index{Arbol$<$ T $>$@{Arbol$<$ T $>$}!contarNodos@{contarNodos}}
+\index{contarNodos@{contarNodos}!Arbol$<$ T $>$@{Arbol$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{contarNodos()}{contarNodos()}}
+{\footnotesize\ttfamily \label{class_arbol_a6b389a2d91cf8ae94cc100522b6b786d} 
+template$<$typename T$>$ \\
+int \doxymbox{\hyperlink{class_arbol}{Arbol}}$<$ T $>$::\+contar\+Nodos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Función pública que llama a contar\+Nodos(\+Nodo$<$\+T$>$\texorpdfstring{$\ast$}{*} inicio). 
+
+
+
+Definition at line \doxymbox{\hyperlink{arbol_8cpp_source_l00125}{125}} of file \doxymbox{\hyperlink{arbol_8cpp_source}{arbol.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00126\ \{}
+\DoxyCodeLine{00127\ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{class_arbol_a6b389a2d91cf8ae94cc100522b6b786d}{contarNodos}}(raiz);}
+\DoxyCodeLine{00128\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_arbol_a027ae9589732b5c606359824677fa818}\index{Arbol$<$ T $>$@{Arbol$<$ T $>$}!insertarDato@{insertarDato}}
+\index{insertarDato@{insertarDato}!Arbol$<$ T $>$@{Arbol$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{insertarDato()}{insertarDato()}}
+{\footnotesize\ttfamily \label{class_arbol_a027ae9589732b5c606359824677fa818} 
+template$<$typename T$>$ \\
+void \doxymbox{\hyperlink{class_arbol}{Arbol}}$<$ T $>$::\+insertar\+Dato (\begin{DoxyParamCaption}\item[{T}]{dato}{}\end{DoxyParamCaption})}
+
+
+
+Inserta un nuevo nodo con el valor de "{}dato"{} en el árbol. 
+
+El nuevo nodo se inserta en la "{}raiz"{} dado el caso que esta se encuentre vacia. De lo contrario, se insertará en el subárbol izquiero si el valor del nuevo nodo es inferior al de la raíz, o en el subárbol derecho si es superior.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dato} & El valor que se almacenará en el nuevo nodo del árbol. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \doxymbox{\hyperlink{arbol_8cpp_source_l00070}{70}} of file \doxymbox{\hyperlink{arbol_8cpp_source}{arbol.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00071\ \{}
+\DoxyCodeLine{00072\ \ \ \ \ \doxymbox{\hyperlink{class_arbol}{Nodo<T>}}*\ \doxymbox{\hyperlink{class_arbol}{nuevo\_nodo}}\ =\ \textcolor{keyword}{new}\ \doxymbox{\hyperlink{class_arbol}{Nodo<T>}}(\doxymbox{\hyperlink{class_arbol}{dato}});}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordflow}{if}\ (raiz\ ==\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00074\ \ \ \ \ \{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ raiz\ =\ \doxymbox{\hyperlink{class_arbol}{nuevo\_nodo}};}
+\DoxyCodeLine{00076\ \ \ \ \ \}}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00078\ \ \ \ \ \{}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_arbol}{Nodo<T>}}*\ \doxymbox{\hyperlink{class_arbol}{anterior}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_arbol}{Nodo<T>}}*\ \doxymbox{\hyperlink{class_arbol}{inicio}}\ =\ raiz;}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(\doxymbox{\hyperlink{class_arbol}{inicio}}\ !=\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_arbol}{anterior}}\ =\ \doxymbox{\hyperlink{class_arbol}{inicio}};}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_arbol}{inicio}}\ =\ (\doxymbox{\hyperlink{class_arbol}{dato}}\ <\ \doxymbox{\hyperlink{class_arbol}{inicio}}-\/>valor)\ ?\ \doxymbox{\hyperlink{class_arbol}{inicio}}-\/>nodo\_izq\ :\ \doxymbox{\hyperlink{class_arbol}{inicio}}-\/>\doxymbox{\hyperlink{class_arbol}{nodo\_der}};\ }
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{class_arbol}{dato\ <\ anterior-\/>}}\doxymbox{\hyperlink{class_arbol}{valor}})}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_arbol}{anterior}}-\/>nodo\_izq\ =\ \doxymbox{\hyperlink{class_arbol}{nuevo\_nodo}};}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_arbol}{anterior}}-\/>nodo\_der\ =\ \doxymbox{\hyperlink{class_arbol}{nuevo\_nodo}};}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00096\ \ \ \ \ \}}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \ \ \ \ \doxymbox{\hyperlink{class_arbol}{cout}}\ <<\ \textcolor{stringliteral}{"{}¡Se\ ha\ añadido\ con\ éxito\ el\ nodo\ con\ valor\ "{}}\ <<\ \doxymbox{\hyperlink{class_arbol}{dato}}\ <<\ \textcolor{stringliteral}{"{}!\(\backslash\)n"{}};}
+\DoxyCodeLine{00099\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_arbol_af3027c56d2a4c697865fbfbc50f50dfe}\index{Arbol$<$ T $>$@{Arbol$<$ T $>$}!orden@{orden}}
+\index{orden@{orden}!Arbol$<$ T $>$@{Arbol$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{orden()}{orden()}}
+{\footnotesize\ttfamily \label{class_arbol_af3027c56d2a4c697865fbfbc50f50dfe} 
+template$<$typename T$>$ \\
+void \doxymbox{\hyperlink{class_arbol}{Arbol}}$<$ T $>$::\+orden (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Imprime el contenido de los nodos en pre-\/orden, in-\/orden y post-\/orden. 
+
+Es la función de acceso público que utiliza la función privadas que permiten la obtención del contenido del árbol en diferentes ordenes, es decir, orden\+Pre(\+Nodo$<$\+T$>$\texorpdfstring{$\ast$}{*} inicio), orden\+In(\+Nodo$<$\+T$>$\texorpdfstring{$\ast$}{*} inicio) y orden\+Post(\+Nodo$<$\+T$>$\texorpdfstring{$\ast$}{*} inicio).
+
+Dado el caso que el árbol se encuentre vacío, se lanza una excepción. 
+
+Definition at line \doxymbox{\hyperlink{arbol_8cpp_source_l00440}{440}} of file \doxymbox{\hyperlink{arbol_8cpp_source}{arbol.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00441\ \{}
+\DoxyCodeLine{00442\ \ \ \ \ \textcolor{keywordflow}{if}\ (raiz\ ==\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00443\ \ \ \ \ \{}
+\DoxyCodeLine{00444\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \doxymbox{\hyperlink{class_arbol}{excepcion}}(\textcolor{stringliteral}{"{}¡El\ árbol\ se\ encuentra\ vacío!"{}});\ \ }
+\DoxyCodeLine{00445\ \ \ \ \ \}}
+\DoxyCodeLine{00446\ }
+\DoxyCodeLine{00447\ \ \ \ \ \doxymbox{\hyperlink{class_arbol}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n-\/-\/-\/\ PRE-\/ORDEN\ -\/-\/-\/\(\backslash\)n"{}};}
+\DoxyCodeLine{00448\ \ \ \ \ ordenPre(raiz);}
+\DoxyCodeLine{00449\ }
+\DoxyCodeLine{00450\ \ \ \ \ \doxymbox{\hyperlink{class_arbol}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)n-\/-\/-\/\ IN-\/ORDEN\ -\/-\/-\/\(\backslash\)n"{}};}
+\DoxyCodeLine{00451\ \ \ \ \ ordenIn(raiz);}
+\DoxyCodeLine{00452\ }
+\DoxyCodeLine{00453\ \ \ \ \ \doxymbox{\hyperlink{class_arbol}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)n-\/-\/-\/\ POST-\/ORDEN\ -\/-\/-\/\(\backslash\)n"{}};}
+\DoxyCodeLine{00454\ \ \ \ \ ordenPost(raiz);}
+\DoxyCodeLine{00455\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_arbol_abd0776d1af9723024018051dbadbb172}\index{Arbol$<$ T $>$@{Arbol$<$ T $>$}!promedio@{promedio}}
+\index{promedio@{promedio}!Arbol$<$ T $>$@{Arbol$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{promedio()}{promedio()}}
+{\footnotesize\ttfamily \label{class_arbol_abd0776d1af9723024018051dbadbb172} 
+template$<$typename T$>$ \\
+double \doxymbox{\hyperlink{class_arbol}{Arbol}}$<$ T $>$::\+promedio (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Calcula el promedio de los valores almancenados en los nodos del árbol. 
+
+Devuelve la suma de los valores almacenados en los nodos dividida por el número total de nodos en el árbol.
+
+Dado el caso que el árbol se encuentre vacío, se lanza una excepción. 
+
+Definition at line \doxymbox{\hyperlink{arbol_8cpp_source_l00281}{281}} of file \doxymbox{\hyperlink{arbol_8cpp_source}{arbol.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00282\ \{}
+\DoxyCodeLine{00283\ \ \ \ \ \textcolor{keywordflow}{if}\ (raiz\ ==\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00284\ \ \ \ \ \{}
+\DoxyCodeLine{00285\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \doxymbox{\hyperlink{class_arbol}{excepcion}}(\textcolor{stringliteral}{"{}¡El\ árbol\ se\ encuentra\ vacío!"{}});}
+\DoxyCodeLine{00286\ \ \ \ \ \}}
+\DoxyCodeLine{00287\ }
+\DoxyCodeLine{00288\ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{class_arbol}{suma}}\ =\ sumaNodos(raiz);}
+\DoxyCodeLine{00289\ \ \ \ \ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{class_arbol}{num}}\ =\ \doxymbox{\hyperlink{class_arbol_a6b389a2d91cf8ae94cc100522b6b786d}{contarNodos}}();}
+\DoxyCodeLine{00290\ }
+\DoxyCodeLine{00291\ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{class_arbol}{suma}}\ /\ \doxymbox{\hyperlink{class_arbol}{num}};}
+\DoxyCodeLine{00292\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_arbol_a306728b842f03eb6785be16db021537f}\index{Arbol$<$ T $>$@{Arbol$<$ T $>$}!visualizacion@{visualizacion}}
+\index{visualizacion@{visualizacion}!Arbol$<$ T $>$@{Arbol$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{visualizacion()}{visualizacion()}}
+{\footnotesize\ttfamily \label{class_arbol_a306728b842f03eb6785be16db021537f} 
+template$<$typename T$>$ \\
+void \doxymbox{\hyperlink{class_arbol}{Arbol}}$<$ T $>$::\+visualizacion (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Imprime el contenido de los nodos por nivel. 
+
+Se organizan los nodos almacenados en el árbol dentro de una cola para mostrarlos por nivel; gracias al bucle while, primero imprime el número del nivel actual, seguido de los nodos y la categoría a la que pertenecen (raíz, hoja u interno). El uso de !cola.empty() asegura el no perder ningún nodo del árbol.
+
+Dado el caso que el árbol se encuentre vacío, se lanza una excepción. 
+
+Definition at line \doxymbox{\hyperlink{arbol_8cpp_source_l00307}{307}} of file \doxymbox{\hyperlink{arbol_8cpp_source}{arbol.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00308\ \{}
+\DoxyCodeLine{00309\ \ \ \ \ \textcolor{keywordflow}{if}\ (raiz\ ==\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00310\ \ \ \ \ \{}
+\DoxyCodeLine{00311\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \doxymbox{\hyperlink{class_arbol}{excepcion}}(\textcolor{stringliteral}{"{}¡El\ árbol\ se\ encuentra\ vacío!"{}});}
+\DoxyCodeLine{00312\ \ \ \ \ \}}
+\DoxyCodeLine{00313\ }
+\DoxyCodeLine{00314\ \ \ \ \ \doxymbox{\hyperlink{class_arbol}{queue<Nodo<T>}}*>\ \doxymbox{\hyperlink{class_arbol}{cola}};}
+\DoxyCodeLine{00315\ \ \ \ \ \doxymbox{\hyperlink{class_arbol}{cola}}.push(raiz);}
+\DoxyCodeLine{00316\ }
+\DoxyCodeLine{00317\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_arbol}{nivel}}\ =\ 0;}
+\DoxyCodeLine{00318\ }
+\DoxyCodeLine{00319\ \ \ \ \ \textcolor{keywordflow}{while}\ (!\doxymbox{\hyperlink{class_arbol}{cola}}.empty())}
+\DoxyCodeLine{00320\ \ \ \ \ \{}
+\DoxyCodeLine{00321\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_arbol}{elementosNivel}}\ =\ \doxymbox{\hyperlink{class_arbol}{cola}}.size();}
+\DoxyCodeLine{00322\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_arbol}{cout}}\ <<\ \textcolor{stringliteral}{"{}Nivel\ "{}}\ <<\ \doxymbox{\hyperlink{class_arbol}{nivel}}\ <<\ \textcolor{stringliteral}{"{}\ =\ "{}};}
+\DoxyCodeLine{00323\ }
+\DoxyCodeLine{00324\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_arbol}{i}}\ =\ 0;\ \doxymbox{\hyperlink{class_arbol}{i}}\ <\ \doxymbox{\hyperlink{class_arbol}{elementosNivel}};\ \doxymbox{\hyperlink{class_arbol}{i}}++)}
+\DoxyCodeLine{00325\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00326\ }
+\DoxyCodeLine{00327\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_arbol}{Nodo<T>}}*\ \doxymbox{\hyperlink{class_arbol}{nodo\_actual}}\ =\ \doxymbox{\hyperlink{class_arbol}{cola}}.front();}
+\DoxyCodeLine{00328\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_arbol}{cola}}.pop();}
+\DoxyCodeLine{00329\ }
+\DoxyCodeLine{00330\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{class_arbol}{categoria}};}
+\DoxyCodeLine{00331\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00332\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{class_arbol}{nodo\_actual}}\ ==\ raiz)}
+\DoxyCodeLine{00333\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00334\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_arbol}{categoria}}\ =\ \textcolor{stringliteral}{"{}(Raíz)"{}};}
+\DoxyCodeLine{00335\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00336\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{class_arbol}{nodo\_actual}}-\/>nodo\_izq\ ==\ \textcolor{keyword}{nullptr}\ \&\&\ \doxymbox{\hyperlink{class_arbol}{nodo\_actual}}-\/>nodo\_der\ ==\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00337\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00338\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_arbol}{categoria}}\ =\ \textcolor{stringliteral}{"{}(Hoja)"{}};}
+\DoxyCodeLine{00339\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00340\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00341\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00342\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_arbol}{categoria}}\ =\ \textcolor{stringliteral}{"{}(Interno)"{}};}
+\DoxyCodeLine{00343\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00344\ }
+\DoxyCodeLine{00345\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_arbol}{cout}}\ <<\ \doxymbox{\hyperlink{class_arbol}{categoria}}\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ \doxymbox{\hyperlink{class_arbol}{nodo\_actual}}-\/>valor\ <<\ \textcolor{stringliteral}{"{}\ |\ "{}};}
+\DoxyCodeLine{00346\ }
+\DoxyCodeLine{00347\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{class_arbol}{nodo\_actual}}-\/>nodo\_izq\ !=\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00348\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00349\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_arbol}{cola}}.push(\doxymbox{\hyperlink{class_arbol}{nodo\_actual}}-\/>nodo\_izq);}
+\DoxyCodeLine{00350\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00351\ }
+\DoxyCodeLine{00352\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{class_arbol}{nodo\_actual}}-\/>nodo\_der\ !=\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00353\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00354\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_arbol}{cola}}.push(\doxymbox{\hyperlink{class_arbol}{nodo\_actual}}-\/>nodo\_der);}
+\DoxyCodeLine{00355\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00356\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00357\ }
+\DoxyCodeLine{00358\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_arbol}{cout}}\ <<\ \doxymbox{\hyperlink{class_arbol}{endl}};}
+\DoxyCodeLine{00359\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_arbol}{nivel}}++;}
+\DoxyCodeLine{00360\ \ \ \ \ \}}
+\DoxyCodeLine{00361\ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+headers/\+\doxymbox{\hyperlink{arbol_8h}{arbol.\+h}}\item 
+src/\+\doxymbox{\hyperlink{arbol_8cpp}{arbol.\+cpp}}\end{DoxyCompactItemize}

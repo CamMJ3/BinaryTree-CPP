@@ -1,0 +1,110 @@
+\begin{theindex}
+
+  \item {\texorpdfstring{$\sim$}{\string~}Arbol}
+    \subitem {Arbol$<$ T $>$}, \hyperpage{18}
+
+  \indexspace
+
+  \item {Arbol}
+    \subitem {Arbol$<$ T $>$}, \hyperpage{18}
+  \item {Arbol$<$ T $>$}, \hyperpage{17}
+    \subitem {\texorpdfstring{$\sim$}{\string~}Arbol}, \hyperpage{18}
+    \subitem {Arbol}, \hyperpage{18}
+    \subitem {buscarMax}, \hyperpage{18}
+    \subitem {contarHojas}, \hyperpage{18}
+    \subitem {contarInternos}, \hyperpage{18}
+    \subitem {contarNodos}, \hyperpage{19}
+    \subitem {insertarDato}, \hyperpage{19}
+    \subitem {orden}, \hyperpage{19}
+    \subitem {promedio}, \hyperpage{20}
+    \subitem {visualizacion}, \hyperpage{20}
+
+  \indexspace
+
+  \item {buscarMax}
+    \subitem {Arbol$<$ T $>$}, \hyperpage{18}
+
+  \indexspace
+
+  \item {contarHojas}
+    \subitem {Arbol$<$ T $>$}, \hyperpage{18}
+  \item {contarInternos}
+    \subitem {Arbol$<$ T $>$}, \hyperpage{18}
+  \item {contarNodos}
+    \subitem {Arbol$<$ T $>$}, \hyperpage{19}
+
+  \indexspace
+
+  \item {excepcion}, \hyperpage{22}
+    \subitem {excepcion}, \hyperpage{22}
+
+  \indexspace
+
+  \item {headers Directory Reference}, \hyperpage{15}
+  \item {headers/arbol.h}, \hyperpage{25, 26}
+  \item {headers/excepcion.h}, \hyperpage{26, 27}
+  \item {headers/nodo.h}, \hyperpage{27}
+
+  \indexspace
+
+  \item {insertarDato}
+    \subitem {Arbol$<$ T $>$}, \hyperpage{19}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{33}
+  \item {main.cpp}
+    \subitem {main}, \hyperpage{33}
+    \subitem {menu}, \hyperpage{34}
+  \item {menu}
+    \subitem {main.cpp}, \hyperpage{34}
+
+  \indexspace
+
+  \item {Nodo}
+    \subitem {Nodo$<$ T $>$}, \hyperpage{23}
+  \item {Nodo$<$ T $>$}, \hyperpage{22}
+    \subitem {Nodo}, \hyperpage{23}
+    \subitem {nodo\_der}, \hyperpage{24}
+    \subitem {nodo\_izq}, \hyperpage{24}
+    \subitem {valor}, \hyperpage{24}
+  \item {nodo\_der}
+    \subitem {Nodo$<$ T $>$}, \hyperpage{24}
+  \item {nodo\_izq}
+    \subitem {Nodo$<$ T $>$}, \hyperpage{24}
+
+  \indexspace
+
+  \item {orden}
+    \subitem {Arbol$<$ T $>$}, \hyperpage{19}
+
+  \indexspace
+
+  \item {promedio}
+    \subitem {Arbol$<$ T $>$}, \hyperpage{20}
+  \item {Pruebas}, \hyperpage{3}
+
+  \indexspace
+
+  \item {README.md}, \hyperpage{28}
+
+  \indexspace
+
+  \item {src Directory Reference}, \hyperpage{15}
+  \item {src/arbol.cpp}, \hyperpage{28}
+  \item {src/main.cpp}, \hyperpage{32}, \hyperpage{34}
+  \item {src/nodo.cpp}, \hyperpage{36}
+
+  \indexspace
+
+  \item {valor}
+    \subitem {Nodo$<$ T $>$}, \hyperpage{24}
+  \item {visualizacion}
+    \subitem {Arbol$<$ T $>$}, \hyperpage{20}
+
+  \indexspace
+
+  \item {Árbol Binario en C++}, \hyperpage{1}
+
+\end{theindex}
